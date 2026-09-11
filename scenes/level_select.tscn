@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://c03twn3p14xfx"]
+
+[ext_resource type="Script" path="res://scripts/scenes/LevelSelect.gd"]
+
+[node name="LevelSelect" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("res://scripts/scenes/LevelSelect.gd")
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.1, 0.1, 0.15, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -150.0
+offset_right = 150.0
+offset_bottom = 150.0
+alignment = 1
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+text = "SELECT LEVEL"
+add_theme_font_size_override = 48
+
+[node name="Level1" type="Button" parent="VBoxContainer"]
+text = "Level 1: Chromatic Surge"
+size_flags_vertical = 2
+custom_minimum_size = Vector2(300, 60)
+
+[node name="Level2" type="Button" parent="VBoxContainer"]
+text = "Level 2: Nexus Flow"
+size_flags_vertical = 2
+custom_minimum_size = Vector2(300, 60)
+
+[node name="Level3" type="Button" parent="VBoxContainer"]
+text = "Level 3: Eternal Cascade"
+size_flags_vertical = 2
+custom_minimum_size = Vector2(300, 60)
+
+[node name="BackButton" type="Button" parent="VBoxContainer"]
+text = "BACK"
+size_flags_vertical = 2
+custom_minimum_size = Vector2(300, 60)
